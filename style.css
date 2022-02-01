@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(0, 0, 0, .336);
 }
 .slid:hover .title{
     opacity: 1;

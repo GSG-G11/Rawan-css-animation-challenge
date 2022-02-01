@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.slid{
+    position: relative;
+    width: 18%;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    animation: anime calc(0.8s * var(--i)) ease-in-out;
+}
+@keyframes anime {
+    0%{
+        transform: translateY(-100vh);
+    }
+}
+.slid:hover{
+    width: 600px;
+}
+.title{
+    position: absolute;
+    top: 0%;   
+    color:#fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slid:hover .title{
+    opacity: 1;
+}
+.slid img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    transition: all .5s ease-in-out .5s;
+}
+.slid:hover img{
+    transform: scale(2) rotate(10deg);
+}
